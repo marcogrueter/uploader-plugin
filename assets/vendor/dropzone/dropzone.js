@@ -1,3 +1,7 @@
+/**
+ * DropZone V5.5.1 (non-minified) for testing on October CMS
+ */
+
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1807,6 +1811,7 @@ var Dropzone = function (_Emitter) {
         return this.options.accept.call(this, file, done);
       }
     }
+
   }, {
     key: "addFile",
     value: function addFile(file) {
@@ -2864,7 +2869,7 @@ var Dropzone = function (_Emitter) {
 
 Dropzone.initClass();
 
-Dropzone.version = "5.5.0";
+Dropzone.version = "5.5.1";
 
 // This is a map of options for your different dropzones. Add configurations
 // to this object for your different dropzone elemens.
@@ -2987,7 +2992,7 @@ Dropzone.discover = function () {
 //
 Dropzone.blacklistedBrowsers = [
 // The mac os and windows phone version of opera 12 seems to have a problem with the File drag'n'drop API.
-/opera.*(Macintosh|Windows Phone).*version\/12/i];
+  /opera.*(Macintosh|Windows Phone).*version\/12/i];
 
 // Checks if the browser is supported
 Dropzone.isBrowserSupported = function () {
